@@ -29,10 +29,10 @@ public class ChatServer {
             serverBootstrap.group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
                     .childHandler(new ChannelInitializer<SocketChannel>() {
-
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
                             socketChannel.pipeline()
+                                    //DelimiterBasedFrameDecoder用来解决以特殊符号作为消息结束符的粘包问题
                                     .addLast("framer", new DelimiterBasedFrameDecoder(8192, Delimiters.lineDelimiter()))
                                     .addLast("decoder", new StringDecoder())
                                     .addLast("encoder", new StringEncoder())

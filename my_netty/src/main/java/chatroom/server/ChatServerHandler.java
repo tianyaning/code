@@ -8,7 +8,9 @@ import io.netty.channel.group.DefaultChannelGroup;
 import io.netty.util.concurrent.GlobalEventExecutor;
 
 public class ChatServerHandler extends SimpleChannelInboundHandler {
-    public static ChannelGroup channels = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
+    //Netty提供了ChannelGroup接口，该接口继承Set接口
+    // 因此可以通过ChannelGroup可管理服务器端所有的连接的Channel，然后对所有的连接Channel广播消息。
+    public static ChannelGroup channelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
 
     /**
      * 每当服务端收到新的客户端连接时,客户端的channel存入ChannelGroup列表中,并通知列表中其他客户端channel
@@ -21,10 +23,10 @@ public class ChatServerHandler extends SimpleChannelInboundHandler {
         //获取连接的channel
         Channel incomming = ctx.channel();
         //通知所有已经连接到服务器的客户端，有一个新的通道加入
-        for (Channel channel : channels) {
-            channel.writeAndFlush("[SERVER]-" + incomming.remoteAddress() + "加入\n");
+        for (Channel channel : channelGroup) {
+            channel.writeAndFlush("[系统消息]-" + incomming.remoteAddress() + "加入\n");
         }
-        channels.add(ctx.channel());
+        channelGroup.add(ctx.channel());
     }
 
     /**
@@ -37,11 +39,11 @@ public class ChatServerHandler extends SimpleChannelInboundHandler {
     public void handlerRemoved(ChannelHandlerContext ctx) throws Exception {
         //获取连接的channel
         Channel incomming = ctx.channel();
-        for (Channel channel : channels) {
-            channel.writeAndFlush("[SERVER]-" + incomming.remoteAddress() + "离开\n");
+        for (Channel channel : channelGroup) {
+            channel.writeAndFlush("[系统消息]-" + incomming.remoteAddress() + "离开\n");
         }
         //从服务端的channelGroup中移除当前离开的客户端
-        channels.remove(ctx.channel());
+        channelGroup.remove(ctx.channel());
     }
 
     /**
@@ -71,24 +73,6 @@ public class ChatServerHandler extends SimpleChannelInboundHandler {
     }
 
     /**
-     * 当服务端的IO 抛出异常时被调用
-     *
-     * @param ctx
-     * @param cause
-     * @throws Exception
-     */
-    @Override
-    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-        //super.exceptionCaught(ctx, cause);
-        Channel incoming = ctx.channel();
-        System.out.println("ChatClient:" + incoming.remoteAddress() + "异常");
-        //异常出现就关闭连接
-        cause.printStackTrace();
-        ctx.close();
-    }
-
-
-    /**
      * 每当从服务端读到客户端写入信息时,将信息转发给其他客户端的Channel.
      *
      * @param channelHandlerContext
@@ -99,7 +83,7 @@ public class ChatServerHandler extends SimpleChannelInboundHandler {
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, Object o) throws Exception {
         Channel incomming = channelHandlerContext.channel();
         //将收到的信息转发给全部的客户端channel
-        for (Channel channel : channels) {
+        for (Channel channel : channelGroup) {
             if (channel != incomming) {
                 channel.writeAndFlush("[" + incomming.remoteAddress() + "]" + o.toString() + "\n");
             } else {
