@@ -14,12 +14,6 @@ public class ProtocolDecoder extends ByteToMessageDecoder {
 
         // 可读长度必须大于基本长度
         if (in.readableBytes() >= BASE_LENGTH) {
-            // 防止socket字节流攻击
-            // 防止，客户端传来的数据过大
-            // 因为，太大的数据，是不合理的
-//            if (in.readableBytes() > 2048) {
-//                in.skipBytes(in.readableBytes());
-//            }
 
             // 记录包头开始的index
             int beginReader;
@@ -34,13 +28,11 @@ public class ProtocolDecoder extends ByteToMessageDecoder {
                     break;
                 }
 
-                // 未读到包头，略过一个字节
-                // 每次略过，一个字节，去读取，包头信息的开始标记
+                // 未读到包头，略过一个字节，每次略过，一个字节，去读取，包头信息的开始标记
                 in.resetReaderIndex();
                 in.readByte();
 
-                // 当略过，一个字节之后，
-                // 数据包的长度，又变得不满足
+                // 当略过，一个字节之后，数据包的长度，又变得不满足
                 // 此时，应该结束。等待后面的数据到达
                 if (in.readableBytes() < BASE_LENGTH) {
                     return;

@@ -43,15 +43,15 @@ public class RpcClient {
 //                                    .addLast("encoder", new ClientMessageEncoder())
                                     //第三种添加了tcp自定义协议的序列化方式
                                     .addLast(new ClientMessageDecoder())
-                                    .addLast(new ClientMessageEncoder())
                                     .addLast(new ProtocolEncoder())
+                                    .addLast(new ClientMessageEncoder())
                                     .addLast(new RpcClientHandler());
 
                         }
                     });
 
             Channel channel = bootstrap.connect(host, port).sync().channel();
-            for(int i = 0; i < 2; i ++) {
+            for(int i = 0; i < 100; i ++) {
                 InputParam inputParam = new InputParam();
                 inputParam.setNum1(i);
                 inputParam.setNum2(i * 2);

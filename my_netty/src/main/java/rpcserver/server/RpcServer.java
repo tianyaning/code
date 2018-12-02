@@ -8,10 +8,10 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import rpcserver.common.OriginJava.ServerMessageEncoder;
 import rpcserver.common.Protocol.ProtocolDecoder;
 import rpcserver.common.Protocol.ProtocolEncoder;
 import rpcserver.common.Protocol.ServerMessageDecoder;
+import rpcserver.common.Protocol.ServerMessageEncoder;
 //import rpcserver.common.MessagePack.ServerMessageDecoder;
 //import rpcserver.common.MessagePack.ServerMessageEncoder;
 
@@ -41,9 +41,10 @@ public class RpcServer {
                                     //第二种netty支持的messagePack序列化方式
 //                                    .addLast("decoder", new ServerMessageDecoder())
 //                                    .addLast("encoder", new ServerMessageEncoder())
+                                    //第三种添加了tcp自定义协议的序列化方式
                                     .addLast(new ServerMessageDecoder())
-                                    .addLast(new ServerMessageEncoder())
                                     .addLast(new ProtocolEncoder())
+                                    .addLast(new ServerMessageEncoder())
                                     .addLast(new RpcServerHandler());
                         }
                     })

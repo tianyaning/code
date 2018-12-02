@@ -2,6 +2,7 @@ package rpcserver.common.Protocol;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToMessageDecoder;
+import rpcserver.common.InputParam;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -13,7 +14,7 @@ public class ServerMessageDecoder extends MessageToMessageDecoder<TcpPackageProt
     protected void decode(ChannelHandlerContext ctx, TcpPackageProtocol msg, List<Object> out) throws Exception {
         byte[] bytes = msg.getMessage();
         ObjectInputStream inputStream = new ObjectInputStream(new ByteArrayInputStream(bytes));
-        InputStream inputParam = (InputStream)inputStream.readObject();
+        InputParam inputParam = (InputParam)inputStream.readObject();
         out.add(inputParam);
     }
 }

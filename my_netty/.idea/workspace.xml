@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e03e89a2-7f83-48f7-9e2a-e1f7a6db54c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ClientMessageDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ClientMessageEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ServerMessageDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ServerMessageEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/TcpPackageProtocol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/TcpPackageProtocolHead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rpcserver/client/RpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rpcserver/client/RpcClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ServerMessageDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ServerMessageDecoder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rpcserver/server/RpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rpcserver/server/RpcServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/rpcserver/client/RpcClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rpcserver/client/RpcClient$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rpcserver/client/RpcClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rpcserver/client/RpcClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/rpcserver/server/RpcServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rpcserver/server/RpcServer$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/rpcserver/server/RpcServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rpcserver/server/RpcServer.class" afterDir="false" />
     </list>
@@ -54,7 +47,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="10" />
-          <entry key="java" value="224" />
+          <entry key="java" value="241" />
           <entry key="proto" value="2" />
           <entry key="txt" value="1" />
           <entry key="xml" value="3" />
@@ -63,7 +56,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="10" />
-          <entry key="JAVA" value="224" />
+          <entry key="JAVA" value="241" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="PROTO" value="2" />
           <entry key="XML" value="3" />
@@ -72,14 +65,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="19" />
-          <entry key="java" value="3479" />
+          <entry key="java" value="3534" />
           <entry key="proto" value="65" />
           <entry key="xml" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3479" />
+          <entry key="JAVA" value="3534" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="PROTO" value="65" />
           <entry key="XML" value="32" />
@@ -92,11 +85,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ServerMessageDecoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            <state relative-caret-position="198">
+              <caret line="11" selection-start-line="11" selection-end-line="19" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/TcpPackageProtocol.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" selection-start-line="2" selection-end-line="38" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/TcpPackageProtocolHead.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -104,56 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ClientMessageDecoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/server/RpcServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-245">
-              <caret line="43" column="58" lean-forward="true" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/client/RpcClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolEncoder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolDecoder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="144">
+              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,8 +127,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ClientMessageEncoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="79" lean-forward="true" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
+            <state relative-caret-position="126">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/OriginJava/ClientMessageEncoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,7 +149,43 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ServerMessageEncoder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="12" column="80" lean-forward="true" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
+              <caret line="12" selection-start-line="12" selection-end-line="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolDecoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="59" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/client/RpcClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="73" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolEncoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" selection-start-line="6" selection-end-line="17" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -219,8 +227,10 @@
       <find>bytebuf</find>
       <find>new ObjectOutputStream</find>
       <find>ObjectOutputStream</find>
-      <find>msg</find>
       <find>if (in.readableBytes() &gt; 2048) {</find>
+      <find>msg</find>
+      <find>ObjectInputStream inputStream = new ObjectInputStream(new ByteArrayInputStream(bytes));</find>
+      <find>ServerMessageDecoder</find>
     </findStrings>
     <replaceStrings>
       <replace>channelGroup</replace>
@@ -259,13 +269,13 @@
         <option value="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/TcpPackageProtocolHead.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ClientMessageDecoder.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/TcpPackageProtocol.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ClientMessageEncoder.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ServerMessageEncoder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rpcserver/server/RpcServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rpcserver/client/RpcClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolEncoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rpcserver/server/RpcServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ServerMessageDecoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rpcserver/client/RpcClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolDecoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ClientMessageEncoder.java" />
       </list>
     </option>
   </component>
@@ -379,26 +389,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rpcserver" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="MessagePack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myNetty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_netty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rpcserver" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="OriginJava" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myNetty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_netty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rpcserver" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="Protocol" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -419,10 +409,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="rpcclienthand&#9;FILE&#9;file:///Users/tianyaning/My_Work/my_github/code/my_netty/src/main/java/rpcserver/client/RpcClientHandler.java&#10;rpcclient&#9;FILE&#9;file:///Users/tianyaning/My_Work/my_github/code/my_netty/src/main/java/rpcserver/client/RpcClient.java" />
+    <property name="SearchEverywhereHistoryKey" value="clientMessageencoder&#9;FILE&#9;file:///Users/tianyaning/My_Work/my_github/code/my_netty/src/main/java/rpcserver/common/OriginJava/ClientMessageEncoder.java&#10;rpcclienthand&#9;FILE&#9;file:///Users/tianyaning/My_Work/my_github/code/my_netty/src/main/java/rpcserver/client/RpcClientHandler.java&#10;rpcclient&#9;FILE&#9;file:///Users/tianyaning/My_Work/my_github/code/my_netty/src/main/java/rpcserver/client/RpcClient.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543734467702" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543752540616" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -540,12 +530,12 @@
       <workItem from="1542081054720" duration="10000" />
       <workItem from="1542428244286" duration="16339000" />
       <workItem from="1542536307367" duration="27741000" />
-      <workItem from="1543212805623" duration="8627000" />
+      <workItem from="1543212805623" duration="13669000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62491000" />
+    <option name="totallyTimeSpent" value="67533000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -558,9 +548,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3004292" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3004292" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -569,7 +558,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32939634" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42125985" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.79133856" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4448819" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -591,7 +580,7 @@
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.34191704" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3004292" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3004292" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -600,8 +589,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32939634" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5616798" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39895013" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.48293963" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4448819" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32961586" />
@@ -657,7 +646,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolDecoder.java</url>
-          <line>63</line>
+          <line>55</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -674,12 +663,6 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolDecoder.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/rpcserver/client/RpcClient.java</url>
           <line>57</line>
           <properties />
@@ -687,15 +670,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/rpcserver/client/RpcClient.java</url>
-          <line>46</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/rpcserver/client/RpcClient.java</url>
           <line>45</line>
           <properties />
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/rpcserver/client/RpcClient.java</url>
@@ -711,15 +688,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/rpcserver/server/RpcServer.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/rpcserver/server/RpcServer.java</url>
           <line>44</line>
           <properties />
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/rpcserver/server/RpcServer.java</url>
@@ -727,11 +698,40 @@
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolDecoder.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ServerMessageDecoder.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ServerMessageDecoder.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ServerMessageDecoder.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>inputStream.readObject()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>msgpack.read(array)</expression-string>
         <language-id>JAVA</language-id>
@@ -740,13 +740,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.31.Final/netty-all-4.1.31.Final-sources.jar!/io/netty/bootstrap/AbstractBootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="169" column="17" selection-start-line="169" selection-start-column="17" selection-end-line="169" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.31.Final/netty-all-4.1.31.Final-sources.jar!/io/netty/bootstrap/ServerBootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -885,16 +878,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/serializable/a.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Student.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/OriginJava/ServerMessageEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/MessagePack/ServerMessageEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -976,13 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/TcpPackageProtocolHead.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/OriginJava/ClientMessageDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1010,27 +986,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/OriginJava/ClientMessageEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.31.Final/netty-all-4.1.31.Final-sources.jar!/io/netty/buffer/ByteBuf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/TcpPackageProtocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1044,7 +1003,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ClientMessageDecoder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/OriginJava/ServerMessageEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
@@ -1054,10 +1013,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/server/RpcServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/io/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/TcpPackageProtocolHead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/TcpPackageProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="59" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ClientMessageDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ClientMessageEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/OriginJava/ClientMessageEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ServerMessageDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="198">
+          <caret line="11" selection-start-line="11" selection-end-line="19" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1067,27 +1104,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ServerMessageEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="80" lean-forward="true" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ClientMessageEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="79" lean-forward="true" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/server/RpcServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
-          <caret line="43" column="58" lean-forward="true" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
+          <caret line="12" selection-start-line="12" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1096,28 +1113,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/client/RpcClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rpcserver/common/Protocol/ProtocolDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="9">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="73" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
