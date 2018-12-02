@@ -9,8 +9,10 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 //import rpcserver.common.MessagePack.ClientMessageDecoder;
 import rpcserver.common.InputParam;
-import rpcserver.common.OriginJava.ClientMessageDecoder;
-import rpcserver.common.OriginJava.ClientMessageEncoder;
+import rpcserver.common.Protocol.ClientMessageDecoder;
+import rpcserver.common.Protocol.ClientMessageEncoder;
+import rpcserver.common.Protocol.ProtocolDecoder;
+import rpcserver.common.Protocol.ProtocolEncoder;
 //import rpcserver.common.MessagePack.ClientMessageEncoder;
 
 public class RpcClient {
@@ -32,19 +34,24 @@ public class RpcClient {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
                             socketChannel.pipeline()
+                                    .addLast(new ProtocolDecoder())
 //                                    第一种java原生的序列化方式
-                                    .addLast("decoder", new ClientMessageDecoder())
-                                    .addLast("encoder", new ClientMessageEncoder())
+//                                    .addLast("decoder", new ClientMessageDecoder())
+//                                    .addLast("encoder", new ClientMessageEncoder())
                                     //第二种netty支持的messagePack序列化方式
 //                                    .addLast("decoder", new ClientMessageDecoder())
 //                                    .addLast("encoder", new ClientMessageEncoder())
+                                    //第三种添加了tcp自定义协议的序列化方式
+                                    .addLast(new ClientMessageDecoder())
+                                    .addLast(new ClientMessageEncoder())
+                                    .addLast(new ProtocolEncoder())
                                     .addLast(new RpcClientHandler());
 
                         }
                     });
 
             Channel channel = bootstrap.connect(host, port).sync().channel();
-            for(int i = 0; i < 100; i ++) {
+            for(int i = 0; i < 2; i ++) {
                 InputParam inputParam = new InputParam();
                 inputParam.setNum1(i);
                 inputParam.setNum2(i * 2);

@@ -8,8 +8,10 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import rpcserver.common.OriginJava.ServerMessageDecoder;
 import rpcserver.common.OriginJava.ServerMessageEncoder;
+import rpcserver.common.Protocol.ProtocolDecoder;
+import rpcserver.common.Protocol.ProtocolEncoder;
+import rpcserver.common.Protocol.ServerMessageDecoder;
 //import rpcserver.common.MessagePack.ServerMessageDecoder;
 //import rpcserver.common.MessagePack.ServerMessageEncoder;
 
@@ -32,12 +34,16 @@ public class RpcServer {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
                             socketChannel.pipeline()
+                                    .addLast(new ProtocolDecoder())
 //                                    第一种java原生的序列化方式
-                                    .addLast("decoder", new ServerMessageDecoder())
-                                    .addLast("encoder", new ServerMessageEncoder())
+//                                    .addLast("decoder", new ServerMessageDecoder())
+//                                    .addLast("encoder", new ServerMessageEncoder())
                                     //第二种netty支持的messagePack序列化方式
 //                                    .addLast("decoder", new ServerMessageDecoder())
 //                                    .addLast("encoder", new ServerMessageEncoder())
+                                    .addLast(new ServerMessageDecoder())
+                                    .addLast(new ServerMessageEncoder())
+                                    .addLast(new ProtocolEncoder())
                                     .addLast(new RpcServerHandler());
                         }
                     })
